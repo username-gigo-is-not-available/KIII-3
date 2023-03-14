@@ -1,5 +1,6 @@
 # KIII-3
-
+## Chapter 7
+### $ cat Dockerfile
 ```
 $ cd flask-app
 $ ls -l
@@ -19,6 +20,9 @@ ADD . /flask-app
 WORKDIR /flask-app
 
 RUN pip install -r requirements.txt
+```
+### $ cat docker-compose.yml
+```
 $ nano docker-compose.yml
 $ cat docker-compose.yml
 version: '3'
@@ -33,6 +37,7 @@ services:
   redis:
     image: redis
 ```
+
 ### $ docker build -t flask-app .
 ### $ docker images
 ```
